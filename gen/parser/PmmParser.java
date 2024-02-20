@@ -17,8 +17,7 @@ public class PmmParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		TRASH=1, REAL_CONSTANT=2, INT_CONSTANT=3, CHAR_CONSTANT=4, IDENT=5, COMMENT1=6, 
-		COMMENT2=7;
+		TRASH=1, REAL_CONSTANT=2, INT_CONSTANT=3, CHAR_CONSTANT=4, IDENT=5, COMMENT=6;
 	public static final int
 		RULE_program = 0;
 	private static String[] makeRuleNames() {
@@ -36,7 +35,7 @@ public class PmmParser extends Parser {
 	private static String[] makeSymbolicNames() {
 		return new String[] {
 			null, "TRASH", "REAL_CONSTANT", "INT_CONSTANT", "CHAR_CONSTANT", "IDENT", 
-			"COMMENT1", "COMMENT2"
+			"COMMENT"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -126,7 +125,7 @@ public class PmmParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\u0007\u0005\u0002\u0000\u0007\u0000\u0001\u0000\u0001\u0000"+
+		"\u0004\u0001\u0006\u0005\u0002\u0000\u0007\u0000\u0001\u0000\u0001\u0000"+
 		"\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0003\u0000\u0002\u0001"+
 		"\u0000\u0000\u0000\u0002\u0003\u0001\u0000\u0000\u0000\u0003\u0001\u0001"+
 		"\u0000\u0000\u0000\u0000";

@@ -23,5 +23,30 @@ public class LexerHelper {
 		}
 		return -1;
 	}
-	
+
+	public static char lexemeToChar(String text) {
+		 char[] caracteres =text.toCharArray();
+		 char char1 = caracteres[1];
+		 if(char1!='\\'){
+			 return char1;
+		 }else{
+			 char char2 = caracteres[2];
+			 if(char2=='t' || char2=='n'){
+				 return char2;
+			 }else{
+				 String union;
+					if (caracteres.length==3)
+						return (char) Character.getNumericValue(char2);
+					else if(caracteres.length==4){
+						union = Character.toString(char2)+ Character.toString(caracteres[3]);
+						return (char) Integer.parseInt(union);
+					}else{
+						union = Character.toString(char2)+ Character.toString(caracteres[3])+Character.toString(caracteres[4]);
+						return (char) Integer.parseInt(union);
+					}
+			 }
+
+		 }
+		
+	}
 }
