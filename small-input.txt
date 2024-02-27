@@ -1,14 +1,25 @@
-123
-456
-2.
-.3
-.0
-3.0
-0.1
-0.0
-12.3
-34.12E-3
-2.
-3e3
-''' hola
-'''
+
+
+def main():{
+if a>b:
+print 1;
+
+if a>b:
+print a;
+print b;
+
+if a<b:{
+print a;
+print b;
+}
+
+if a<b:{
+print a;
+print b;
+}
+else:{
+print c;
+}
+
+f(a,f(34,aguacate)) = 6/7*(int)a;
+}
